@@ -5,11 +5,11 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 
 const FlightList = () => {
-  const [price, setPrice] = useState(50); // Default value for the price range
+  // const [price, setPrice] = useState(50); // Default value for the price range
   const [departureTime, setDepartureTime] = useState('');
   const [arrivalTime, setArrivalTime] = useState('');
 
-  const handlePriceChange = (e) => setPrice(e.target.value);
+  // const handlePriceChange = (e) => setPrice(e.target.value);
   const handleDepartureTimeChange = (e) => setDepartureTime(e.target.value);
   const handleArrivalTimeChange = (e) => setArrivalTime(e.target.value);
 
@@ -24,7 +24,7 @@ const FlightList = () => {
   const handleFilterApply = () => {
     if (validateFilters()) {
       // Apply filter logic or fetch filtered flights
-      console.log('Filters applied:', { price, departureTime, arrivalTime });
+      // console.log('Filters applied:', { price, departureTime, arrivalTime });
     } else {
       // Display warning message
       alert('Departure time cannot be later than arrival time');
